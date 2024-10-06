@@ -47,8 +47,8 @@ m.atoms.clear()
 We see `const` used in 3 places:
 
 1. What are the three different places, and what do they each mean? That is, what is the `const` referring to (what is being kept constant)?
-2. Could you rewrite the `add_component` function to not use `const` at all? Why is that better or worse?
-3. Could you rewrite the first `get_component` function and get rid of one `const` keyword? Is there a benefit to that?
+2. Could you rewrite the `add_component` function to use `const`? Why or why not?
+3. You can rewrite the first `get_component` function and get rid of one `const`. Which one? Is there a benefit to that?
 4. Is the second `get_component` function a good idea?
 5. How does the compiler know which `get_component` function to use when it is called?
 
