@@ -78,40 +78,40 @@ C++ Templates
 2. It's used in `std::array`. The second part of the template is the size (ie, `std::array<int, 3>`)
 
 3. ```C++
-template<int I>
-int factorial()
-{
-  int fac = 1;
-  for(int i = 1; i <= I; i++)
-    fac = fac * i;
+   template<int I>
+   int factorial()
+   {
+     int fac = 1;
+     for(int i = 1; i <= I; i++)
+       fac = fac * i;
 
-  return fac;
-}
+     return fac;
+   }
 
-int main(void)
-{
-  int f = factorial<5>();
-  std::cout << "5! = " << f << std::endl;
-}
-```
+   int main(void)
+   {
+     int f = factorial<5>();
+     std::cout << "5! = " << f << std::endl;
+   }
+   ```
 
 
 4. ```C++
-template<int I>
-int factorial()
-{
-  return I*factorial<I-1>();
-}
-
-template<>
-int factorial<0>()
-{
-  return 1;
-}
-
-int main(void)
-{
-  int f = factorial<7>();
-  std::cout << "7! = " << f << std::endl;
-}
-```
+   template<int I>
+   int factorial()
+   {
+     return I*factorial<I-1>();
+   }
+   
+   template<>
+   int factorial<0>()
+   {
+     return 1;
+   }
+   
+   int main(void)
+   {
+     int f = factorial<7>();
+     std::cout << "7! = " << f << std::endl;
+   }
+   ```
